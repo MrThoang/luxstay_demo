@@ -19,6 +19,13 @@ a {
     display: inline-block;
     color: #222;
 }
+
+a ,
+p {
+    transition: 0.4s;
+
+}
+
 p {
     color: #222222;
     margin: 0 0 16px;
