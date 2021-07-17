@@ -1,106 +1,90 @@
 /* Mobile & Tablet */
-@media (max-width: 1023px) {
 
+@media (max-width: 1023px) {
     .mt-mobile--16 {
         margin-top: 16px;
     }
-
     .hide-on-mobile-tablet {
         display: none;
     }
     .header {
         position: fixed;
     }
-    
     .header__navbar-mobile-bar {
-       display: block;
+        display: block;
     }
-   
     .header__navbar {
-       height: 60px;
+        height: 60px;
     }
-
-   .header__logo {
-       display: none;
-   }
-   .header__search-box {
-       margin: 0;
-   }
-   .tourist__select {
+    .header__logo {
+        display: none;
+    }
+    .header__search-box {
+        margin: 0;
+    }
+    .tourist__select {
         height: 250px;
     }
-
     .post__header {
         height: 250px;
     }
-
-    .qr-code { 
+    .qr-code {
         display: none;
     }
-    
     .widget__qr-code {
         display: none;
     }
-    
-    .widget-mgl--88 ,
+    .widget-mgl--88,
     .mg-left-20 {
         margin: 0;
     }
-
 }
 
+
 /* Tablet */
+
 @media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet {
         display: none;
     }
-
     .row--child {
         justify-content: center;
     }
-    
-
 }
 
-/* Mobile */ 
+
+/* Mobile */
+
 @media (max-width: 739px) {
-
-     .hide-on-mobile {
+    .hide-on-mobile {
         display: none;
-    }  
-
-    .flex--center {
-    justify-content: center;
     }
-
-
+    .flex--center {
+        justify-content: center;
+    }
     .luxstay-wrapper {
         padding: 0 6px;
     }
-
     .header {
         left: 0;
         padding-left: 8px;
     }
-
     .container {
         position: relative;
-        top: 80px; 
+        top: 80px;
     }
-
     .header__navbar-mobile-bar {
         display: block;
         position: relative;
         right: 12px;
     }
-
     .header__search-guests,
     .header__search-date {
         display: none;
     }
     .header__search-location {
-       width: 270px;
-   }
+        width: 270px;
+    }
     .header__search-btn {
         padding: 5px 10px;
     }
@@ -109,14 +93,13 @@
     }
     .search-content {
         padding: 0px 6px;
-    } 
+    }
     .tourist-title {
         font-size: 2rem;
     }
     .title__list-click {
         display: none;
     }
-
     .title__list-mobile-click {
         display: block;
         font-size: 1.6rem;
@@ -126,35 +109,27 @@
         position: relative;
         top: 10px;
     }
-
     .post__header {
-    height: 132px;
+        height: 132px;
     }
     .post__title {
-    font-size: 1.6rem;
-  
+        font-size: 1.6rem;
     }
-
     .app-link {
         text-align: center;
     }
-
     /* widget*/
     .widget__title {
         text-align: center;
     }
-
     .about-item {
         justify-content: center;
     }
-
     .social {
         display: flex;
         justify-content: center;
     }
-
     .mgl-call-mobile-10 {
-    margin-left: 10px;
+        margin-left: 10px;
     }
-    
 }

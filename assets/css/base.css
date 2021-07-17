@@ -4,7 +4,12 @@
     --hover-color: #f65e39;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     line-height: 1.25;
 }
@@ -20,10 +25,9 @@ a {
     color: #222;
 }
 
-a ,
+a,
 p {
     transition: 0.4s;
-
 }
 
 p {
@@ -31,18 +35,21 @@ p {
     margin: 0 0 16px;
 }
 
-
 .cl--gray {
     color: #999;
 }
 
-    /* margin-top */
+
+/* margin-top */
+
 .mt--42 {
     margin-top: 42px !important;
 }
+
 .mt--8 {
     margin-top: 8px !important;
 }
+
 .mt--12 {
     margin-top: 16px !important;
 }
@@ -51,10 +58,13 @@ p {
     margin-top: 30px !important;
 }
 
-    /* Margin-bottom */
+
+/* Margin-bottom */
+
 .mb--18 {
     margin-bottom: 18px !important;
 }
+
 .mb--12 {
     margin-bottom: 12px !important;
 }
@@ -67,11 +77,14 @@ p {
     margin-bottom: 0px !important;
 }
 
-        /* Padding */
+
+/* Padding */
+
 .pd-lr--8 {
     padding: 0 8px;
 }
-.pdl--0{
+
+.pdl--0 {
     padding-left: 0 !important;
 }
 
@@ -79,11 +92,13 @@ p {
     padding-right: 0 !important;
 }
 
-.pdb--12{
+.pdb--12 {
     padding-bottom: 12px !important;
 }
- 
-   /* Font-size */
+
+
+/* Font-size */
+
 .fz--14 {
     font-size: 1.4rem !important;
 }
@@ -125,8 +140,7 @@ p {
     background-repeat: no-repeat;
 }
 
-*{
-
+* {
     -webkit-box-sizing: border-box;
     box-sizing: inherit;
     margin: 0;
@@ -137,5 +151,5 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     line-height: 1.5;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
