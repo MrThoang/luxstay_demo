@@ -67,10 +67,6 @@
      opacity: 1;
  }
  
- .header__navbar-mobile-menu-list {
-     margin-top: 24px;
- }
- 
  .header__navbar-mobile-open {
      font-size: 3rem;
  }
@@ -168,32 +164,38 @@
  .header__search-date {
      width: 115px;
  }
- 
- .header__search-date:focus~.datepicker-wrapper {
-     display: block;
- }
  /* Dates */
  
  .datepicker-wrapper {
      position: fixed;
-     display: flex;
+     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
      width: 700px;
      left: 115px;
      top: 70px;
-     border-radius: 10px;
+     border-radius: 6px;
      overflow: hidden;
      display: none;
  }
  
+ .date-btn {
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ .date-btn:hover {
+     color: #f65e39;
+ }
+ 
  .datepicker-wrapper-left {
      width: 350px;
-     background-color: rgb(20, 18, 18);
+     background-color: #ccc;
      height: 100px;
  }
  
  .datepicker-wrapper-right {
      width: 350px;
-     background-color: rgb(175, 8, 8);
+     background-color: #fff;
      height: 100px;
  }
  /* Guests */
@@ -277,8 +279,8 @@
      bottom: 0;
      left: 0;
      right: 0;
-     z-index: 11;
      position: fixed;
+     display: none;
  }
  
  .currency-input:checked~.overlay-currency {
@@ -287,6 +289,10 @@
  
  .currency-input:checked~.currency-box {
      display: block;
+     transform: translateY(0%);
+     opacity: 1;
+     visibility: visible;
+     /*  Thuộc tính ẩn hiện đối tượng */
  }
  /* Currency-box */
  
@@ -299,8 +305,10 @@
      border-radius: 3px;
      border: 1px solid #d6d6d6;
      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
-     display: none;
-     animation: fadeInMobile ease-in-out 0.3s;
+     transform: translateY(30%);
+     visibility: hidden;
+     opacity: 0;
+     transition: linear 0.3s, opacity 0.3s;
  }
  
  .currency-box .row {

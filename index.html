@@ -33,16 +33,20 @@
                                 <i class="search__icon fas fa-search"></i>
                                 <input type="text" autocomplete="off" placeholder="Tìm kiếm" class="search__location-input">
                             </div>
-                            <div class="header__search-date search-content search-hover">
-                                <i class="search__icon far fa-calendar"></i> Ngày
-                                <!-- Calendar  -->
-                                <div class="datepicker-wrapper">
-                                    <div class="datepicker-wrapper-left">
 
-                                    </div>
-                                    <div class="datepicker-wrapper-right">
+                            <div class="header__search-date search-content">
+                                <button class="date-btn js-date-btn">
+                                        <i class="search__icon far fa-calendar"></i>
+                                        Ngày
+                                </button>
+                            </div>
+                            <!-- Calendar  -->
+                            <div class="datepicker-wrapper row">
+                                <div class="datepicker-wrapper-left  col l-6 m-6">
 
-                                    </div>
+                                </div>
+                                <div class="datepicker-wrapper-right col l-6 m-6 ">
+
                                 </div>
                             </div>
                             <div class="header__search-guests search-content search-hover">
@@ -52,7 +56,7 @@
 
                                 </div>
                             </div>
-                            <button class="header__search-btn ">
+                            <button class="header__search-btn  hide-on-mobile">
                                             <i class="search__guests-icon fas fa-search"></i>
                                         </button>
                         </div>
@@ -75,9 +79,9 @@
                             </li>
 
                             <!-- Currency menu -->
-                            <!--  <label for="currency-check-input" class="overlay-currency"></label> -->
-
                             <input type="checkbox" hidden class="currency-input" id="currency-check-input">
+
+                            <label for="currency-check-input" class="overlay-currency"></label>
 
                             <label for="currency-check-input" class="menu__item menu__currency">
                                         <img src="https://www.luxstay.com/icons/vi.svg" alt="" class="vn-img">
@@ -85,7 +89,7 @@
                                         <i class="menu__currency-icon fas fa-caret-down"></i>
                                     </label>
 
-                            <div class="currency-box">
+                            <div class="currency-box ">
                                 <div class="select__currency row">
                                     <div class="col l-6 ">
                                         <a class="d-flex select__currency-ctn " href="">
@@ -121,7 +125,7 @@
                     <!-- Menu mobile -->
                     <label for="navbar-mobile-input" class="header__navbar-mobile-bar">
                             <i class="header__navbar-mobile-open fas fa-bars"></i>
-                         </label>
+                           </label>
 
                     <input type="checkbox" hidden class="nav-input" id="navbar-mobile-input">
 
@@ -131,14 +135,14 @@
                         <label for="navbar-mobile-input" class="header__navbar-mobile-close">
                                  <i class="fas fa-times"></i>
                              </label>
-                        <div class="menu__currency menu__from-mobile ">
-                            <img src="https://www.luxstay.com/icons/vi.svg" alt="" class="vn-img">
-                            <span class="menu__item-link menu__item-link--font"> VND </span>
-                            <i class="menu__from-icon fas fa-caret-down"></i>
-                        </div>
+
+
                         <ul class="header__navbar-mobile-menu-list">
                             <li class="menu__mobile-item">
-                                <a href="" class="menu__mobile-item-link"> Host </a>
+                                <a href="" class="menu__mobile-item-link"> Guide </a>
+                            </li>
+                            <li class="menu__mobile-item">
+                                <a href="" class="menu__mobile-item-link  top-host"> Host </a>
                             </li>
                             <li class="menu__mobile-item">
                                 <a href="" class="menu__mobile-item-link "> Đăng ký </a>
@@ -147,6 +151,47 @@
                                 <a href="" class="menu__mobile-item-link"> Đăng nhập </a>
                             </li>
                         </ul>
+
+                        <!-- Currency menu mobile-->
+                        <input type="checkbox" hidden class="currency-mobile-input" id="currency-check-mobile-input">
+
+                        <label for="currency-check-mobile-input" class="menu__currency menu__from-mobile ">
+                                <div>
+                                    <img src="https://www.luxstay.com/icons/vi.svg" alt="" class="vn-img">
+                                    <span class="menu__item-link menu__item-link--font"> VND </span>
+                                </div>
+                                <i class="menu__from-icon fas fa-caret-down"></i>
+                            </label>
+                        <div class="currency-mobile-box ">
+                            <div class="select__mobile-currency row">
+                                <div class="col c-12 ">
+                                    <a class="d-flex select__currency-ctn " href="">
+                                        <img src="https://www.luxstay.com/icons/vi.svg" alt="">
+                                        <span class="select-title"> Tiếng Việt</span>
+                                        <i class=" select__currency-icon fas fa-check"></i>
+                                    </a>
+                                    <a class="d-flex select__currency-ctn " href="">
+                                        <img src="https://www.luxstay.com/icons/en.svg" alt="">
+                                        <span class="select-title">  English</span>
+                                    </a>
+                                    <a class="d-flex select__currency-ctn " href="">
+                                        <img src="https://www.luxstay.com/icons/ko.svg" alt="">
+                                        <span class="select-title">  Korean</span>
+                                    </a>
+                                </div>
+                                <div class="col c-12">
+                                    <a class="d-flex select__currency-ctn " href="">
+                                        <b>VND</b>
+                                        <span class="select-title"> Việt Nam Đồng</span>
+                                        <i class=" select__currency-icon fas fa-check"></i>
+                                    </a>
+                                    <a class="d-flex select__currency-ctn " href="">
+                                        <b>USD</b>
+                                        <span class="select-title">  United States Dollar</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -916,7 +961,9 @@
             </div>
         </div>
     </div>
+
 </body>
-<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="./assets/js/scripts.js">
+</script>
 
 </html>
